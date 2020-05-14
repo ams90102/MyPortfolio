@@ -296,10 +296,10 @@ li{
 .portfolio-item:last-child{
     margin-bottom: 0;
 }
-.profile-img{
+/* .profile-img{
     width: 50rem;
     flex: 1;
-}
+} */
 .portfolio-description{
 }
 .portfolio-description h1{
