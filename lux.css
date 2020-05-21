@@ -37,7 +37,6 @@ body{
 }
 #container .section .content .text{
     padding-right: 50px;
-    
 } 
 #container .section .content .text h1{
     margin: 0;
@@ -52,9 +51,34 @@ body{
 #container .section .content img{
     max-width: 450px;
 } 
-/* @media screen and (max-width: 768px){
-    body{
+@media screen and (max-width: 900px){
+    /* body{
         background: url("images/sitebg2.jpg") no-repeat center fixed;
         background-size: cover;
+    } */
+    #container{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
     }
-} */
+    .content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #container .section .content .text{
+        padding-right: 0px;
+    } 
+    #container .section .content .text p{
+        font-size: 1.1em;
+        width: 450px;
+        word-break: normal;
+    } 
+    #container .section .content img{
+        max-width: 400px;
+    } 
+}
