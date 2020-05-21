@@ -14,33 +14,74 @@
         <div class="section">
             <div class="content">
                 <div class="text">
-                    <h1>Section One</h1>
-                    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, non magnam at architecto delectus laborum, porro eius quod reprehenderit dignissimos rem quas doloribus consequuntur eaque sed sint quasi cum ea.</P>
+                    <h1>Lux</h1>
+                    <P>
+                        ▷ 遊戲類型：多人線上競技遊戲 <br>
+                        ▷ 遊戲特色：玩家透過熟悉角色技能、關卡地形以及「光帶」的應用來為團隊取得勝利。遊戲中玩家可以從四個角色中選擇一個操作，與隊友合作先攻下佔領區，最終目標是擊潰敵方主塔。
+                    </P>
                 </div>
-                <img src="images/portitem1.jpeg" alt="">
+                <img src="images/Lux_海報2.jpg" alt="">
             </div>
         </div>
         <div class="section">
             <div class="content">
                 <div class="text">
-                    <h1>Section Two</h1>
-                    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, non magnam at architecto delectus laborum, porro eius quod reprehenderit dignissimos rem quas doloribus consequuntur eaque sed sint quasi cum ea.</P>
+                    <h1>操作說明</h1>
+                    <P>
+                        <table width="500">
+                            <tr>
+                                <td>▷ WASD：移動 </td>
+                                <td>▷ Space：跳躍 </td>
+                            </tr>
+                            <tr>
+                                <td>▷ 滑鼠左鍵：普通攻擊 </td>
+                                <td>▷ 滑鼠右鍵：特殊技能A </td>
+                            </tr>
+                            <tr>
+                                <td>▷ 長按滑鼠左鍵：蓄力攻擊 </td>
+                                <td>▷ E：潛光 </td>
+                            </tr>
+                            <tr>
+                                <td>▷ F：特殊技能B </td>
+                                <td>▷ Q：大招 </td>
+                            </tr>
+                            <tr>
+                                <td>▷ TAB：隊伍資料/選擇角色 </td>
+                                <td>▷ ESC：離開房間 </td>
+                            </tr>
+                        </table>
+                    </P>
                 </div>
-                <img src="images/portitem2.jpeg" alt="">
+                <img src="images/Lux_操作說明.png" alt="">
             </div>
         </div>
         <div class="section">
             <div class="content">
                 <div class="text">
-                    <h1>Section Three</h1>
-                    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet, non magnam at architecto delectus laborum, porro eius quod reprehenderit dignissimos rem quas doloribus consequuntur eaque sed sint quasi cum ea.</P>
+                    <h1>開發經驗</h1>
+                    <P>
+                        　　本遊戲使用Unity遊戲引擎開發，C#程式語言撰寫。<br>
+                        　　我們團隊使用Unity插件PUN2作為連線基礎進行開發。PUN2免費版本有20CCU(允許能同時連上遊戲的用戶數量)，非常適合小團隊開發。<br>
+                        　　製作連線上面遇到最大的困難就是同步，使用photonview元件，同步人物位移、旋轉與動畫。一開始會想大量依靠動畫事件達到同步，後來發現這樣做反而不太精準，之後多以RPC遠端呼叫達到較精準的同步。<br>
+                        　　在Lobby與選角中，若兩玩家同時按下選角，為了避免同隊選到同一隻角色，有做隨機分配角色的功能，並且記錄同步每個玩家的選角資訊。<br>
+                        　　一個角色有6個技能，包含特殊空中攻擊，在角色開發上需要投入很多心力。
+                    </P>
                 </div>
-                <img src="images/portitem3.jpeg" alt="">
+                <img src="images/Lux_封面3.png" alt="">
             </div>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="lux.js"></script>
+    <!-- <script src="lux.js"></script> -->
+    <script type="text/javascript">
+        $(window).scroll(function(){
+            var scroll = $(window).scrollTop(),
+                dh = $(document).height(),
+                wh = $(window).height();
+                value = (scroll/(dh-wh)) * 100;
+            $('#container').css('left', -value * 3 + '%')
+        })
+    </script>
 </body>
 </html>
