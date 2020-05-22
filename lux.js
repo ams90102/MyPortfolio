@@ -8,19 +8,15 @@ $(window).scroll(function(){
             dh = $(document).height(),
             wh = $(window).height();
             ww = $(window).width();
-            value = (scroll / (dh-ww)) *100;
-        $('#container').css('left', - value * (dh/ww) + '%');
-
         //     value = (scroll/(dh-wh)) * 100;
         // $('#container').css('left', -value * 3 + '%')
-        
-        //     if (window.matchMedia("(max-width: 1024px)").matches){
-        //         value = (scroll/ww) * 50;
-        //     }
-        //     else{
-        //         value = (scroll/ww) * 60;
-        //     }
-        //     // value = (scroll/(dh-wh)) * 100;
-        // $('#container').css('left', -value * 3 + '%')
+        value = scroll/(dh-wh) *100;
+        // 4是頁數
+        if(ww<1150){
+            $('#container').css('left', - value *(dh/ww) + '%');
+        }
+        else{
+            $('#container').css('left', - value * 3 + '%');
+        }
     }
 });
