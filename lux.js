@@ -9,7 +9,7 @@ $(window).scroll(function(){
             wh = $(window).height();
             ww = $(window).width();
             value = (scroll/(dh-wh)) * 100;
-        $('#container').css('left', -value * 3 + '%')
+        $('#container').css('left', -value * 4 + '%')
         // value = scroll/(dh-wh) *100;
         // // 4是頁數
         // if(ww<1150){
