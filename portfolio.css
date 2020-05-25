@@ -13,19 +13,13 @@ body{
     height: 5000px;
     width: 100%;
     /* background: url("images/Level1-ok.png") no-repeat center fixed; */
-    /* background: no-repeat center fixed;
-    background-size: cover; */
+    background: no-repeat center fixed;
+    background-size: cover;
     /* background-color: black; */
     font-family: 'Roboto','cwTeXFangSong',標楷體,sans-serif;
     color: #eee;
     line-height: 30.5px;
     letter-spacing: 1px;
-}
-#bg-img {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    z-index: -99;
 }
 /* html{
     font-size: 10px;
