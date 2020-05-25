@@ -207,12 +207,12 @@ table{
     td{
         font-size: 2em;
     }
-    .video-container iframe,
-    .video-container object,
-    .video-container embed {
-        position: absolute;
-        align-self: center;
-        width: 50%;
-        height: 50%;
+    .zoom {
+        -webkit-transform: scale(2);/* Safari and Chrome */
+        transform: scale(2);/* zoom factor - prefix if needed */
+        width: 480px;/* half of iframe width */
+        height: 270px;/* half of iframe height */
+        /*margin: 100px 0 0 100px; reposition iframe */
+        overflow: hidden;/* remove big-ass scrollbars */
     }
 }
