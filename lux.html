@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tw">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,128 +8,110 @@
     <meta property="og:image" content="https://raw.githubusercontent.com/ams90102/MyPortfolio/master/images/Lux/Lux-Enid.png">
     <title>Lux</title>
     <link rel="icon" type="image/png" href="images/icon.png" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="portfolio.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="styles/portfolio.css">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
 </head>
-<style>
-    body {
-        background: url("images/Lux/Level1-ok.png") no-repeat center fixed;
-        background-size: cover;
-    }
-</style>
-<body>
-    <div id="container">
+<body class="lux-background">
+    <div class="wrapper">
         <div class="section">
-            <div class="content video-container">
-                <iframe class="zoom" width="560" height="315" src="https://www.youtube.com/embed/ftFU8P3f4BI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-            
-        <div class="section">
-            <div class="content">
-                <div class="text">
-                    <h1>
-                        Lux
-                        <a href="https://drive.google.com/file/d/1e3o_rc9guPK08su2Hn80B2yZtk2X9fMY/view?usp=sharing">
-                            <button class="btn download">Download</button>
-                        </a>
-                    </h1>
-                    <P>
-                        ▷ 遊戲類型：多人線上競技遊戲 <br>
-                        ▷ 遊戲特色：玩家透過熟悉角色技能、關卡地形以及「光帶」的應用來為團隊取得勝利。遊戲中玩家可以從四個角色中選擇一個操作，與隊友合作先攻下佔領區，最終目標是擊潰敵方主塔。
-                    </P>
+            <div class="container">
+                <div class="photo-area">
+                    <img src="images/Lux/Lux_Title.jpg">
                 </div>
-                <img src="images/Lux/海報2.jpg" alt="">
-            </div>
-        </div>
-        <div class="section">
-            <div class="content">
-                <div class="text">
-                    <h1>操作說明</h1>
-                    <P>
-                        <table class="operation" width="500">
-                            <tr>
-                                <td>▷ WASD：移動 </td>
-                                <td>▷ Space：跳躍 </td>
-                            </tr>
-                            <tr>
-                                <td>▷ 滑鼠左鍵：普通攻擊 </td>
-                                <td>▷ F：特殊技能B </td>
-                            </tr>
-                            <tr>
-                                <td>▷ 滑鼠右鍵：特殊技能A </td>
-                                <td>▷ E：潛光 </td>
-                            </tr>
-                            <tr>
-                                <td>▷ 長按滑鼠左鍵：蓄力攻擊 </td>
-                                <td>▷ Q：大招 </td>
-                            </tr>
-                            <tr>
-                                <td>▷ TAB：隊伍資料/選擇角色 </td>
-                                <td>▷ ESC：離開房間 </td>
-                            </tr>
-                        </table>
-                    </P>
+                <div class="content-area">
+                    <h2>Lux</h2>
+                    <div class="description">
+                        <ul class="info-list">
+                            <li>
+                                <div class="label">遊戲類型：</div>
+                                <div class="content">多人線上競技遊戲</div>
+                            </li>
+                            <li>
+                                <div class="label">遊戲特色：</div>
+                                <div class="content">玩家透過熟悉角色技能、關卡地形以及「光帶」的應用來為團隊取得勝利。遊戲中玩家可以從四個角色中選擇一個操作，與隊友合作先攻下佔領區，最終目標是擊潰敵方主塔。</div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <img src="images/Lux/操作說明.png" alt="">
+                
             </div>
         </div>
-        <div class="section">
-            <div class="content">
-                <div class="text">
-                    <h1>負責項目</h1>
-                    <P>
+        
+        <div class="section dark lux">
+            <div class="container">
+                <div class="content-area">
+                    <h2>操作說明</h2>
+                    <div class="description">
                         <table>
                             <tr>
-                                <td>▷ 主程式 </td>
-                                <td>▷ 角色與技能</td>
-                            </tr>
-                            <tr>
-                                <td>▷ 腳本架構 </td>
-                                <td>▷ 佔領及Dota</td>
-                            </tr>
-                            <tr>
-                                <td>▷ 連線同步</td>
-                                <td>▷ 潛光系統</td>
-                            </tr>
-                            <tr>
-                                <td>▷ Lobby與選角</td>
-                                <td>▷ 專案整合</td>
+                                <td>
+                                    <ul class="info-list">
+                                        <li>
+                                            <div class="label">WASD：移動</div>
+                                        </li>
+                                        <li>
+                                            <div class="label">滑鼠左鍵：普通攻擊</div>
+                                        </li>
+                                        <li>
+                                            <div class="label">滑鼠右鍵：特殊技能A</div>
+                                        </li>
+                                        <li>
+                                            <div class="label">長按滑鼠左鍵：蓄力攻擊</div>
+                                        </li>
+                                        <li>
+                                            <div class="label">TAB：隊伍資料/選擇角色</div>
+                                        </li>
+                                    </ul>
+                                </td> 
+                                <td>
+                                    <ul class="info-list">
+                                        <li>
+                                            <div class="label">Space：跳躍</div>
+                                        </li>
+                                        <li>
+                                            <div class="label">F：特殊技能B</div>
+                                        </li>
+                                        <li>
+                                            <div class="label">E：潛光</div>
+                                        </li>
+                                        <li>
+                                            <div class="label">Q：大招</div>
+                                        </li>
+                                        <li>
+                                            <div class="label">ESC：離開房間</div>
+                                        </li>
+                                    </ul>
+                                </td> 
                             </tr>
                         </table>
-                    </P>
+                    </div>
                 </div>
-                <img src="images/Lux/封面2.png" alt="">
+                <div class="photo-area video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/ftFU8P3f4BI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
+
         <div class="section">
-            <div class="content">
-                <div class="text">
-                    <h1>開發過程</h1>
-                    <P>
-                        　　本遊戲使用Unity遊戲引擎開發，C#程式語言撰寫。<br>
-                        　　我們團隊使用Unity插件PUN2作為連線基礎進行開發。PUN2免費版本有20CCU(允許能同時連上遊戲的用戶數量)，非常適合小團隊開發。<br>
-                        　　製作連線上面遇到最大的困難就是同步，使用photonview元件，同步人物位移、旋轉與動畫。一開始會想大量依靠動畫事件達到同步，後來發現這樣做反而不太精準，之後多以RPC遠端呼叫達到較精準的同步。<br>
-                        　　在Lobby與選角中，若兩玩家同時按下選角，為了避免同隊選到同一隻角色，有做隨機分配角色的功能，並且記錄同步每個玩家的選角資訊。<br>
-                        　　一個角色有6個技能，包含特殊空中攻擊，在角色開發上需要投入很多心力。
-                    </P>
+            <div class="container">
+                <div class="photo-area">
+                    <img src="images/Lux/fight.png">
                 </div>
-                <img src="images/Lux/封面3.png" alt="">
+                <div class="content-area">
+                    <h2 class="no-padding">開發過程</h2>
+                    <div class="description">
+                        <p>　　本遊戲使用Unity遊戲引擎開發，C#程式語言撰寫。</p>
+                        <p>　　我們團隊使用Unity插件PUN2作為連線基礎進行開發。PUN2免費版本有20CCU(允許能同時連上遊戲的用戶數量)，非常適合小團隊開發。</p>
+                        <p>　　製作連線上面遇到最大的困難就是同步，使用photonview元件，同步人物位移、旋轉與動畫。一開始會想大量依靠動畫事件達到同步，後來發現這樣做反而不太精準，之後多以RPC遠端呼叫達到較精準的同步。</p>
+                        <p>　　在Lobby與選角中，若兩玩家同時按下選角，為了避免同隊選到同一隻角色，有做隨機分配角色的功能，並且記錄同步每個玩家的選角資訊。</p>
+                        <p>　　一個角色有6個技能，包含特殊空中攻擊，在角色開發上需要投入很多心力。</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="portfolio.js"></script>
-    <!-- <script type="text/javascript">
-        $(window).scroll(function(){
-            var scroll = $(window).scrollTop(),
-                dh = $(document).height(),
-                wh = $(window).height();
-                value = (scroll/(dh-wh)) * 100;
-            $('#container').css('left', -value * 3 + '%')
-        })
-    </script> -->
 </body>
 </html>

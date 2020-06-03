@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tw">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,127 +8,108 @@
     <meta property="og:image" content="https://raw.githubusercontent.com/ams90102/MyPortfolio/master/images/Molly/Molly.png">
     <title>Molly</title>
     <link rel="icon" type="image/png" href="images/icon.png" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="portfolio.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="styles/portfolio.css">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
 </head>
-<style>
-    body {
-        background: url("images/Molly/Level2Bg-ok.png") no-repeat center fixed;
-        background-size: cover;
-    }
-</style>
-<body>
-    <div id="container">
+<body class="molly-background">
+    <div class="wrapper">
         <div class="section">
-            <div class="content video-container">
-                <iframe class="zoom" width="560" height="315" src="https://www.youtube.com/embed/Zdvj1qj3KWs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-            
-        <div class="section">
-            <div class="content">
-                <div class="text">
-                    <h1>
-                        Molly
-                        <a href="https://drive.google.com/file/d/1ro8UqydaE0Dnlb-E2VEUSxSRkfo8EpjN/view?usp=sharing">
-                            <button class="btn download">Download</button>
-                        </a>
-                    </h1>
-                    <P>
-                        ▷ 遊戲類型：RPG、3D、第三人稱 <br>
-                        ▷ 遊戲特色：經典RPG戰鬥遊戲，玩家可以在場景中自由探索、戰鬥。隨著關卡推進會解鎖新的招式，增加打怪的多樣性。
-                    </P>
+            <div class="container">
+                <div class="photo-area">
+                    <img src="images/Molly/teach3.png">
                 </div>
-                <img src="images/Molly/StartAll.png" alt="">
-            </div>
-        </div>
-        <div class="section">
-            <div class="content">
-                <div class="text">
-                    <h1>操作說明</h1>
-                    <P>
-                        <table class="operation" width="500">
-                            <tr>
-                                <td>▷ WASD：移動 </td>
-                                <td>▷ Space：跳躍 </td>
-                            </tr>
-                            <tr>
-                                <td>▷ 滑鼠左鍵：普通攻擊 </td>
-                                <td>▷ Q：HP補品 </td>
-                            </tr>
-                            <tr>
-                                <td>▷ 滑鼠右鍵：重擊/放大視角 </td>
-                                <td>▷ E：MP補品 </td>
-                            </tr>
-                            <tr>
-                                <td>▷ 長按滑鼠左鍵：蓄力攻擊 </td>
-                                <td>▷ R：切換武器 </td>
-                            </tr>
-                            <tr>
-                                <td>▷ ESC：MENU </td>
-                            </tr>
-                        </table>
-                    </P>
+                <div class="content-area">
+                    <h2>Molly</h2>
+                    <div class="description">
+                        <ul class="info-list">
+                            <li>
+                                <div class="label">遊戲類型：</div>
+                                <div class="content">RPG、3D、第三人稱</div>
+                            </li>
+                            <li>
+                                <div class="label">遊戲特色：</div>
+                                <div class="content">經典RPG戰鬥遊戲，玩家可以在場景中自由探索、戰鬥。隨著關卡推進會解鎖新的招式，增加打怪的多樣性。</div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <img src="images/Molly/teach1.png" alt="">
+                
             </div>
         </div>
-        <div class="section">
-            <div class="content">
-                <div class="text">
-                    <h1>負責項目</h1>
-                    <P>
+        
+        <div class="section dark molly">
+            <div class="container">
+                <div class="content-area">
+                    <h2>操作說明</h2>
+                    <div class="description">
                         <table>
                             <tr>
-                                <td>▷ 主程式 </td>
-                                <td>▷ 補品系統 </td>
-                            </tr>
-                            <tr>
-                                <td>▷ 角色基本操作 </td>
-                                <td>▷ UI動態、對話提示 </td>
-                            </tr>
-                            <tr>
-                                <td>▷ 角色攻擊模式 </td>
-                                <td>▷ 播放劇情動畫 </td>
-                            </tr>
-                            <tr>
-                                <td>▷ 小怪AI、Boss AI </td>
-                                <td>▷ 專案整合 </td>
+                                <td>
+                                    <ul class="info-list">
+                                        <li>
+                                            <div class="label">WASD：移動</div>
+                                        </li>
+                                        <li>
+                                            <div class="label">滑鼠左鍵：普通攻擊</div>
+                                        </li>
+                                        <li>
+                                            <div class="label">滑鼠右鍵：重擊/放大視角</div>
+                                        </li>
+                                        <li>
+                                            <div class="label">長按滑鼠左鍵：蓄力攻擊</div>
+                                        </li>
+                                        <li>
+                                            <div class="label">ESC：MENU</div>
+                                        </li>
+                                    </ul>
+                                </td> 
+                                <td>
+                                    <ul class="info-list">
+                                        <li>
+                                            <div class="label">Space：跳躍</div>
+                                        </li>
+                                        <li>
+                                            <div class="label">Q：HP補品</div>
+                                        </li>
+                                        <li>
+                                            <div class="label">E：MP補品</div>
+                                        </li>
+                                        <li>
+                                            <div class="label">R：切換武器</div>
+                                        </li>
+                                
+                                    </ul>
+                                </td> 
                             </tr>
                         </table>
-                    </P>
+                    </div>
                 </div>
-                <img src="images/Molly/aim.png" alt="">
+                <div class="photo-area video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Zdvj1qj3KWs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </div>
         </div>
+
         <div class="section">
-            <div class="content">
-                <div class="text">
-                    <h1>開發過程</h1>
-                    <P>
-                        　　本遊戲使用Unity遊戲引擎開發，C#程式語言撰寫。<br>
-                        　　主角擁有兩種武器，分別有不同攻擊模式，Boss有四種攻擊模式。所以在Animator Controller、Blend trees、Animation Event與人物IK上有加以研究，並且活用Humanoid Avatars讓動畫擁有更多變化性，使角色更自然。<br>
-                        　　以前寫一個AI，把全部的模式都寫入一個類別，很難維護。所以這次專題學習如何實作AI。使用設計模式中的狀態模式（State Pattern），實現有限狀態機FSM。狀態模式：透過不同狀態的切換，讓類別展現不同的行為。<br>
-                        　　優點是使程式碼彈性很大，新增行為模式很方便，並且可以與其他角色共用模式；前者舉例來說，Boss在原本企畫中招式只有三招，開發中決定再增加一種攻擊模式，模式之間互不干擾，只需新增一個類別並寫出轉換模式的條件。
-                        要注意的地方是如果狀態太多，會造成類別數量過多的情況。後者舉例來說，小怪與Boss都有死亡狀態，可以共用同一個狀態類別。
-                    </P>
+            <div class="container">
+                <div class="photo-area">
+                    <img src="images/Molly/Level3.png">
                 </div>
-                <img src="images/Molly/Level3.png" alt="">
+                <div class="content-area">
+                    <h2 class="no-padding">開發過程</h2>
+                    <div class="description">
+                        <p>　　本遊戲使用Unity遊戲引擎開發，C#程式語言撰寫。</p>
+                        <p>　　主角擁有兩種武器，分別有不同攻擊模式，Boss有四種攻擊模式。所以在Animator Controller、Blend trees、Animation Event與人物IK上有加以研究，並且活用Humanoid Avatars讓動畫擁有更多變化性，使角色更自然。</p>
+                        <p>　　以前寫一個AI，把全部的模式都寫入一個類別，很難維護。所以這次專題學習如何實作AI。使用設計模式中的狀態模式（State Pattern），實現有限狀態機FSM。狀態模式：透過不同狀態的切換，讓類別展現不同的行為。</p>
+                        <p>　　優點是使程式碼彈性很大，新增行為模式很方便，並且可以與其他角色共用模式；前者舉例來說，Boss在原本企畫中招式只有三招，開發中決定再增加一種攻擊模式，模式之間互不干擾，只需新增一個類別並寫出轉換模式的條件。
+                            要注意的地方是如果狀態太多，會造成類別數量過多的情況。後者舉例來說，小怪與Boss都有死亡狀態，可以共用同一個狀態類別。</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script src="portfolio.js"></script>
-    <!-- <script type="text/javascript">
-        $(window).scroll(function(){
-            var scroll = $(window).scrollTop(),
-                dh = $(document).height(),
-                wh = $(window).height();
-                value = (scroll/(dh-wh)) * 100;
-            $('#container').css('left', -value * 3 + '%')
-        })
-    </script> -->
 </body>
 </html>

@@ -23,7 +23,7 @@
 }
 html{
     font-size: 10px;
-    font-family: 'Roboto', sans-serif;
+    font-family: '微軟正黑體','Roboto', sans-serif;
     color: #eee;
 }
 body{
@@ -31,6 +31,8 @@ body{
     height: 100%;
     background: url("images/sitebg.jpg") no-repeat center fixed;
     background-size: cover;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 section{
     padding: 6rem 0;
@@ -241,11 +243,11 @@ li{
 .fa-facebook-square:hover{
     color: #4267b2;
 }
-.fa-twitter-square:hover{
-    color: #38a1f3;
+.fa-github-square:hover{
+    color: #4852b9;
 }
-.fa-dribbble-square:hover{
-    color: #ea4c89;
+.fa-behance-square:hover{
+    color: #38a1f3;
 }
 /*End about*/
 
@@ -291,7 +293,7 @@ li{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 5rem;
+    margin-bottom: 10rem;
 }
 .portfolio-item:last-child{
     margin-bottom: 0;
@@ -327,7 +329,7 @@ li{
 /*End portfolio*/
 
 /*Start timeline*/
-.timeline ul{
+/* .timeline ul{
     border-left: 4px solid #ffe838;
     border-radius: .8rem;
     background-color: rgba(0, 0, 0, 0.05);
@@ -378,11 +380,11 @@ li{
     height: 1.5rem;
     width: 1.5rem;
     background-color: #313534;
-}
+} */
 /*End timeline*/
 
 /*Start contact*/
-.contact{
+/* .contact{
     background-color: #221e3f;
 }
 form{
@@ -415,7 +417,7 @@ input[type="submit"]{
 input[type="submit"]:hover{
     color: #221e3f;
     background-color: #ffe838;
-}
+} */
 /*End contact*/
 
 /*Start footer*/
@@ -503,7 +505,7 @@ input[type="submit"]:hover{
     .icon-container i{
         font-size: 4rem;
     }
-    .timeline ul{
+    /* .timeline ul{
         margin: 0 0 0 auto;
     }
     .timeline .date::before{
@@ -511,7 +513,7 @@ input[type="submit"]:hover{
     }
     .timeline .date::after{
         left: -5.9rem;
-    }
+    } */
 }
 @media screen and (max-width: 600px){
     .menu-toggler{
@@ -544,12 +546,12 @@ input[type="submit"]:hover{
         margin: 0;
         order: 2;
     }
-    .timeline p{
+    /* .timeline p{
         font-size: 1.6rem;
     }
     .timeline .date::before{
         font-size: 1.4rem;
-    }
+    } */
     form{
         width: 100%;
     }
@@ -572,3 +574,39 @@ input[type="submit"]:hover{
     }
 }
 /*End media queries*/
+
+.btn{
+    border: 1px solid #3498db;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin:10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+.download{
+    color: #3498db;
+}
+.download:hover{
+    color: #fff;
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #3498db;
+    z-index: -1;
+    transition: 0.8s;
+}
+.download::before{
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+.download:hover::before{
+    height: 180%;
+}
