@@ -10,13 +10,13 @@ $(document).ready(function () {
     $('nav a[href*="#"]').on('click', function(){
         $('html, body').animate({
             scrollTop:$($(this).attr('href')).offset().top - 100
-        },750);
+        },500);
         // keyframes options
     });
     $('#up').on('click', function(){
         $('html, body').animate({
             scrollTop:0
-        },1000);
+        },750);
     });
     AOS.init({
         easing:'ease' ,
