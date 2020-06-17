@@ -30,7 +30,8 @@ html{
 body{
     width: 100%;
     height: 100%;
-    background: url("images/sitebg.jpg") no-repeat center fixed;
+    /* background: url("images/sitebg.png") no-repeat center fixed; */
+    background-color: #221e3f;
     background-size: cover;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -515,11 +516,8 @@ input[type="submit"]:hover{
 /*End animations*/
 
 /*Start media queries*/
-@media screen and (max-width: 768px){
-    body{
-        background: url("images/sitebg2.jpg") no-repeat center fixed;
-        background-size: cover;
-    }
+/* 768px */
+@media screen and (max-width: 900px){
     .landing-text h1{
         font-size: 15rem;
         line-height: 100px;
@@ -568,7 +566,12 @@ input[type="submit"]:hover{
         left: -5.9rem;
     } */
 }
-@media screen and (max-width: 600px){
+/* 600px */
+@media screen and (max-width: 768px){
+    body{
+        /* background: url("images/sitebg2.jpg") no-repeat center fixed; */
+        background-size: cover;
+    }
     .menu-toggler{
         top: 2rem;
         right: 2rem;
@@ -611,6 +614,21 @@ input[type="submit"]:hover{
     .up{
         right: 2rem;
     }
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+    }
+    
+    .video-container iframe, .video-container object, .video-container embed{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 }
 @media screen and (max-width: 1000px){
     .nav-list{
@@ -624,6 +642,10 @@ input[type="submit"]:hover{
     }
     .about-details li{
         margin: 0 2rem;
+    }
+    iframe{
+        width: 400px;
+        height: 225px;
     }
 }
 /*End media queries*/
