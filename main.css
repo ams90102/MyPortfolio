@@ -289,9 +289,9 @@ li{
     font-size: 4rem;
     transition: color 650ms;
 }
-.fa-facebook-square:hover{
+/* .fa-facebook-square:hover{
     color: #4267b2;
-}
+} */
 .fa-github-square:hover{
     color: #4852b9;
 }
