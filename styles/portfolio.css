@@ -21,6 +21,9 @@ html{
 .molly-background{
     background-color: #9b7052d7;
 }
+.ai1960-background{
+    background-color: #a55d2aad;
+}
 .nini-background{
     background-color: #684f67;
 }
@@ -45,6 +48,9 @@ html{
 }
 .section.dark.molly{
     background-color: #5a4739bd;
+}
+.section.dark.ai1960{
+    background-color: #70482ba1;
 }
 .section.dark.nini{
     background-color: #4f3e50bd;

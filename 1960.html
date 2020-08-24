@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image" content="https://raw.githubusercontent.com/ams90102/MyPortfolio/master/images/1960/1960.png">
+    <title>1960</title>
+    <link rel="icon" type="image/png" href="images/icon.png" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="styles/portfolio.css">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+</head>
+<body class="ai1960-background">
+    <div class="wrapper">
+        <div class="section">
+            <div class="container">
+                <div class="photo-area">
+                    <img src="images/1960/1960.png">
+                </div>
+                <div class="content-area">
+                    <h2>1960</h2>
+                    <div class="description">
+                        <ul class="info-list">
+                            <li>
+                                <div class="label">遊戲類型：</div>
+                                <div class="content">半即時型ARPG、3D、探索解謎、獨立製作。</div>
+                            </li>
+                            <li>
+                                <div class="label">遊戲特色：</div>
+                                <div class="content">持著萬物皆有屬性，設計了一跳以五行為底的相生相剋弱點抗性系統，使戰鬥更加有趣味性。並且與探索解謎並存，可以體驗刺激的動作遊戲，也可以體驗動腦的解謎遊戲。</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="section dark ai1960">
+            <div class="container">
+                <div class="content-area">
+                    <h2>操作說明</h2>
+                    <div class="description">
+                        <table>
+                            <tr>
+                                <td>
+                                    <ul class="info-list operating">
+                                        <li>
+                                            <div class="label">WASD：移動</div>
+                                        </li>
+                                        <li>
+                                            <div class="label">滑鼠左鍵：交互鍵/攻擊</div>
+                                        </li>
+                                        <li>
+                                            <div class="label">滑鼠右鍵：搜索鍵/放大視角</div>
+                                        </li>
+                                        <li>
+                                            <div class="label">長按滑鼠左鍵：蓄力攻擊</div>
+                                        </li>
+                                        <li>
+                                            <div class="label">TAB：MENU</div>
+                                        </li>
+                                    </ul>
+                                </td> 
+                                <td>
+                                    <ul class="info-list operating">
+                                        <li>
+                                            <div class="label">Space：跳躍</div>
+                                        </li>
+                                        <li>
+                                            <div class="label">Left Shift：跑步</div>
+                                        </li>
+                                        <li>
+                                            <div class="label">B(長按+左鍵)：切換武器</div>
+                                        </li>
+                                        <li>
+                                            <div class="label">Q：HP補品</div>
+                                        </li>
+                                        <li>
+                                            <div class="label">E：MP補品</div>
+                                        </li>
+                                    </ul>
+                                </td> 
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="photo-area">
+                    <img src="images/1960/street.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="container">
+                <div class="photo-area">
+                    <img src="images/1960/talk.png">
+                </div>
+                <div class="content-area">
+                    <h2 class="no-padding">開發過程</h2>
+                    <div class="description">
+                        <p>　　本遊戲使用Unity遊戲引擎開發，C#程式語言撰寫。</p>
+                        <p>　　將對話系統的程式碼改進，以說明程式設計上遭遇的一些實務問題。常見的傳統寫法是很直覺的，但在實作時便可以發現它的不方便。原始寫法如下：點到某物便把物件布林值打開，開啟後出現txt檔第幾行的對話，在Unity介面中設定點擊對話框執行呼叫AddLine方法。但當物件多起來，要宣告許多物件布林，並把所有該跳第幾行寫出來，腳本就會變得又臭又長，如果換一個場景就要寫一個新的腳本，許多重複的程式碼就代表是可以縮減的，這讓我們開始思考，要如何寫才能變得更好。</p>
+                        <p>　　改良的寫法如下，將一個腳本拆成兩個腳本，對話管理DialogueManager為一個腳本，物件DialogueObject為另一個。每個場景對話腳本只會有一個，而物件腳本可以有多個。不同的物件，就在Unity介面中設定不同的公開變數如文檔、行數等等。當點擊到物件後，呼叫對話管理的公開方法ClikObject，更新對話管理腳本文檔、現在的文字行數與最大行數的變數，就可以成功的與不同物件對話。</p>
+                        <p>　　當我們這樣寫會便利許多，可以重複使用這兩個腳本，並且在每個場景都能普遍使用，改善了一個場景就要多寫一個腳本的問題，也成功改善多一個物件，就要多一個物件變數，用物件變數去控制文字這樣寫死的方法。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</body>
+</html>
